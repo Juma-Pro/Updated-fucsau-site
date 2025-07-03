@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - FUCSAU</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        header {
+            background-color: #23d851;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            padding: 20px;
+            margin-bottom: 60px;
+        }
+        footer {
+            background-color: #26e455;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+        .gallery-item p {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fangak Universities and Colleges Students' Association</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About us.html">About us</a></li>
+                <li><a href="events& education.html">Events & Education</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html">Support & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Gallery</h2>
+        <p>View photos from our recent events and activities.</p>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="leaders.jpg" alt="FUCSAU Leaders">
+                <p>Students general meeting on 15th March 2025</p>
+            </div>
+            <div class="gallery-item">
+                <img src="jay.jpg" alt="Students Meeting">
+                <p>Executives Meeting on 8th March 2025</p>
+            </div>
+            <div class="gallery-item">
+                <img src="world.jpg" alt="Community Event">
+                <p> FUCSAU Executives at the Fangak Community Fundraising day on 30th December,2024</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; FANGAK UNIVERSITIES AND COLLEGES STUDENTS' ASSOCIATION IN UGANDA 2025</p>
+    </footer>
+</body>
+</html>

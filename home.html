@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANGAK UNIVERSITIES AND COLLEGES STUDENTS ASSOCIATION IN UGANDA(FUCSAU)</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        header {
+            background-color: #26db53;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #25d134;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .slideshow {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About us.html">About us</a></li>
+                <li><a href="index.html">Events & Education</a></li>
+                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="support &contact us.html">Support & Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="Logo.JPG" alt="FUCSAU Logo">
+        </div>
+    </header>
+    <div class="content">
+        <h2>Welcome to FUCSAU</h2>
+        <p>Our mission is to encourage Gaatfangak to take their education to the next level through research, education, and community engagement.</p>
+        <div class="slideshow">
+            <img class="slides active" src="leaders.jpg" alt="Fucsau executives 1">
+            <img class="slides" src="jay.jpg" alt="executives 2">
+            <img class="slides" src="world.jpg" alt="fucsau students 3">
+        </div>
+        <p>Explore our website to learn more about our projects, events, and how you can get involved.</p>
+        <img src="giraffe.jpg" alt="Fangak county logo">
+    </div>
+    <footer>
+        <p>&copy; FANGAK UNIVERSITIES AND COLLEGES STUDENTS ASSOCIATION IN UGANDA 2025</p>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slides');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = 'none';
+                slide.classList.remove('active');
+            });
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = 'block';
+            slides[slideIndex - 1].classList.add('active');
+            setTimeout(showSlides, 3500);
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
